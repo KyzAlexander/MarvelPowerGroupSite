@@ -33,6 +33,9 @@
   padding-bottom: 10px;
   padding-top: 10px;  
 }
+.header__burger {
+  display: none;
+}
 
 /* ---shortDescription--- */
 
@@ -94,9 +97,11 @@
 /* ---aboutAs--- */
 
 .aboutAs {
-  max-width: 1107px;
-  width: 100%;
-  margin: 0 auto;   
+  /* max-width: 1107px;
+  width: 100%; */
+  padding-left: 100px;
+  padding-right: 100px;
+  /* margin: 0 auto;    */
   display: flex;
   flex-direction: column;  
   align-self: flex-start;
@@ -420,4 +425,192 @@
   line-height: 14px;
   letter-spacing: 0.6px;
   color: #000000; 
+}
+
+/* --adaptive-- */
+
+@media screen and (max-width: 480px){
+  .header__wrapperBtn {
+    display: none;
+  }
+  .header__burger{
+    display: block;
+  }
+
+  .shortDescription__title {    
+    font-size: 50px;
+    line-height: 60px;    
+  }
+  .shortDescription__subtitle {
+    margin-top: 18px;    
+    font-size: 14px;
+    line-height: 20px;    
+  }
+  .shortDescription__btn {
+    margin-top: 44px;
+    margin-bottom: 70px;    
+  }  
+  .shortDescription__text {    
+    display: none;
+  }
+
+  .aboutAs {
+    padding: 0;    
+    justify-content: flex-start;
+  }
+  .aboutAs__title {
+    margin-top: 53px;    
+    font-size: 40px;    
+  }
+  .aboutAs__line {
+    max-width: 65px;        
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+  .aboutAs__container {    
+    flex-direction: column;
+    align-items: flex-start
+  }
+  .imgAboutUs {
+    max-width: 290px;    
+  }  
+  .wrapperText p {    
+    font-size: 14px;
+    line-height: 24px; 
+    margin-bottom: 5px;    
+  }
+
+  .ourThings {   
+    margin-top: 53px; 
+    padding: 0;    
+  } 
+  .ourThings__title {    
+    font-size: 40px;    
+    margin-top: 21px;    
+  }
+  .ourThings__line {
+    max-width: 65px;    
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+  .ourThings__container {   
+    flex-direction: column;    
+    margin-bottom: 65px;
+  }
+  .ourThings__container img {    
+    margin-bottom: 25px;   
+  }
+
+  .slider {    
+    padding: 0;
+  }
+  .slider__title {    
+    font-size: 40px;    
+    margin-top: 53px;    
+  }
+  .slider__line {
+    max-width: 65px;    
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+  .slider__slider {
+    display: flex;
+    flex-direction: row;  
+  }
+  .btnLeft {
+    margin-right: 10px;
+  }  
+  .btnRight {
+    margin-left: 10px;
+  }
+  .slider__text {    
+    font-size: 14px;
+    line-height: 24px;    
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+
+  .services {    
+    padding: 0;
+    padding-bottom: 62px;
+  }
+  .services__title {    
+    font-size: 40px;    
+    margin-top: 54px;    
+  }
+  .services__line {
+    max-width: 65px;    
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+  .services__text{    
+    font-size: 14px;
+    line-height: 24px;    
+  }
+  .services__wrapperDescriptions {    
+    flex-direction: column;    
+  }  
+  .wrapperDescriptions__card h2 {    
+    font-size: 25px;
+    line-height: 50px;
+    margin: 0;    
+  } 
+  .wrapperDescriptions__card li span {    
+    font-size: 14px;
+    line-height: 16px;      
+  }
+  .wrapperDescriptions__card button {
+    margin-left: 9px;
+    margin-top: 27px;
+    margin-bottom: 54px;
+  }
+
+  .footer {    
+    flex-direction: column;    
+    padding: 0;
+  }
+  .footer__email, .footer__subscription {    
+    margin-bottom: 46px;
+  }
+  .email__title {
+    margin-top: 55px;
+    margin-bottom: 0px;    
+    font-size: 40px;    
+  }
+  .email__line {
+    max-width: 65px;    
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+  .email__subtitle {    
+    font-size: 25px;
+    line-height: 35px;   
+  }
+  .email__link {    
+    font-size: 25px;
+    line-height: 35px;    
+  }
+  .subscription__title {    
+    font-size: 25px;
+    line-height: 35px;    
+    margin-top: 0;
+    margin-bottom: 23px;
+  }
+  .subscription__form {    
+    align-items: flex-start;
+  }  
+  .inpName, .inpEmail {    
+    padding: 16px 217px 16px 20px;  
+  }
+  .inpEmail {
+    margin-top: 15px;
+  }
+  .inpName::placeholder, .inpEmail::placeholder {
+    color: #000000;
+  }
+  .btnSubmit {    
+    width: 169px;    
+    margin-top: 10px;
+    margin-left: 240px;
+  }
 }
